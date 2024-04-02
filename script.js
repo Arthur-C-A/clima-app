@@ -43,11 +43,11 @@ function mostrarDatosClima(data){
     iconoImagen.src= 'https://openweathermap.org/img/wn/10d@2x.png'
 
     const humedadP = document.createElement('p')
-    humedadP.textContent = `La humedad es: ${humedadCiudad}`
+    humedadP.textContent = `La humedad es: ${humedadCiudad}%`
 
     divDatosClima.appendChild(ciudadTitulo)
+    divDatosClima.appendChild(iconoImagen)
     divDatosClima.appendChild(tempP)
+    divDatosClima.appendChild(humedadP)
     divDatosClima.appendChild(descriptionP)
 }
-
-
